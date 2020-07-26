@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+    <audio id="audio" src="Audio/Ding-sound-effect(short).wav" type="audio/mpeg"></audio>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/3.4.1/united/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Sa176srEjCXftw8QYd+wY/WVLqUNOlQ+ENT4shhgMBfALErUsVL8RrhU4zWbWyRt" crossorigin="anonymous">
+    <script src="main.js" async></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1> Tyler's To-Do List</h1>
+    <!-- Need to create the list, as well as make the button send it to the list-->
+    <h2>Add a new to-do item
+        <p><input type="text" id="toDoItem" autocomplete="off"><button id="toDoButton">Add Item</button></h2>
+    </p>
+    <p> Click the to-do text once to check off your complete to-do, double click to delete it from the list. </p> <p>(Delete button doesn't work yet)</p>
+    <p> * NOTE * Checkbox only allows the first checkbox to make a sound</p> <p>(tried using a selector that allows more than one, but then I get the error about not being a function.)</p>
+    <ol id="orderedList">
+        <div></div>
+    </ol>
+    <footer>
+        Created by Tyler Lindley, Copyright 2020!
+    </footer>
+</body>
+
+</html>

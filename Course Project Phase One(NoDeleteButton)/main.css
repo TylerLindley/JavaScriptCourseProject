@@ -1,0 +1,49 @@
+body {
+    background-image: url(Screenshots/BackgroundImage.png);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+li {
+    font-size: 30px;
+}
+
+#delete {
+    text-align: right;
+
+}
+
+#delete:hover {
+    background-color: crimson;
+    text-align: right;
+}
+
+div ol li input {
+    background-color: cyan;
+}
+
+ol {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer {
+    text-align: end;
+    vertical-align: baseline;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+h2>p {
+    font-weight: normal;
+}
