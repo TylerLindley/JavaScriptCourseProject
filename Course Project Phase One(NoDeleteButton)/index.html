@@ -11,7 +11,13 @@
     <audio id="audio" src="Audio/Ding-sound-effect(short).wav" type="audio/mpeg"></audio>
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/3.4.1/united/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Sa176srEjCXftw8QYd+wY/WVLqUNOlQ+ENT4shhgMBfALErUsVL8RrhU4zWbWyRt" crossorigin="anonymous">
-    <script src="main.js" async></script>
+    <script src="main.js" defer></script>
+    <script src="googlemapsapi.js" defer></script>
+    <script src="xhrapi.js" defer></script>
+    <!-- Adding in Google Maps API. -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-VGmhU4tcnli2vmSt4hkEUh8jyzgx4RY&callback=initMap&libraries=&v=weekly"
+        defer></script>
     <link href="main.css" rel="stylesheet">
 </head>
 
@@ -21,14 +27,21 @@
     <h2>Add a new to-do item
         <p><input type="text" id="toDoItem" autocomplete="off"><button id="toDoButton">Add Item</button></h2>
     </p>
-    <p> Click the to-do text once to check off your complete to-do, double click to delete it from the list. </p> <p>(Delete button doesn't work yet)</p>
-    <p> * NOTE * Checkbox only allows the first checkbox to make a sound</p> <p>(tried using a selector that allows more than one, but then I get the error about not being a function.)</p>
+    <p> Click the to-do text once to check off your complete to-do, double click to delete it from the list. </p>
     <ol id="orderedList">
         <div></div>
     </ol>
+    <section id='calendar'> <h2>Here are some chores you have from your calendar hosted on: </h2>
+        <p> https://tylerpitik.github.io/todos.json/todos.json</p>
+        <button id="choresButton">click this button to fetch chores</button>
+</section>
+<h2>A map showing where I can finish various chores</h2>
+<div id="map"></div>
     <footer>
         Created by Tyler Lindley, Copyright 2020!
     </footer>
 </body>
-
 </html>
+
+
+

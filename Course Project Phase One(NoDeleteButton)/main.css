@@ -47,3 +47,27 @@ p {
 h2>p {
     font-weight: normal;
 }
+
+#map {
+    align-items:center ;
+    background-position-y: bottom;
+    height: 150%;
+    width: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+#map{
+    background-position: right;
+    justify-content: left;
+    border:5px solid grey;
+    min-height:100px;
+    height:150%;
+    width: 50;
+  }
